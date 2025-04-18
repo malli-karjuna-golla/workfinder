@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkFinder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+
+    <style>
+        /* Removed Honk font styles */
+        .special-gothic-expanded-one-regular {
+            font-family: "Special Gothic Expanded One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 text-white sticky top-0 shadow-md">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <div class="text-4xl font-bold">WorkFinder</div>
+            <ul class="flex space-x-6">
+                <li><a href="#hero" class="hover:underline hover:text-blue-300">Home</a></li>
+                <li><a href="#services" class="hover:underline hover:text-green-300">Services</a></li>
+                <li><a href="#aboutus" class="hover:underline hover:text-yellow-300">About</a></li>
+                <li><a href="#contact" class="hover:underline hover:text-red-300">Contact</a></li>
+            </ul>
+            <button class="bg-white text-blue-600 px-4 py-2 rounded shadow hover:bg-gray-100">Login</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="bg-gradient-to-r from-blue-500 to-green-500 text-white py-20 border border-gray-200 rounded-lg mx-4 md:mx-8">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Connecting You with Multilingual Service Providers</h1>
+                <p class="text-lg mb-6">Find the best providers for communication, insurance, transportation, and language translation services.</p>
+                <button class="bg-white text-blue-600 px-6 py-3 rounded shadow hover:bg-gray-100">Get Started</button>
+            </div>
+            <div class="md:w-1/2">
+                <img src="People-finder-service-2.jpg" alt="Hero Image" class="rounded-lg shadow-lg w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://via.placeholder.com/150" alt="Service 1" class="mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">Insurance</h3>
+                    <p>Comprehensive guidance for all your insurance needs.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://via.placeholder.com/150" alt="Service 2" class="mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">Communication</h3>
+                    <p>Expert support for seamless communication.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://via.placeholder.com/150" alt="Service 3" class="mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">Language Translation</h3>
+                    <p>Accurate and reliable translation services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="aboutus" class="py-16 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">About Us</h2>
+            <p class="text-lg text-gray-700 text-center mb-6">
+                WorkFinder is dedicated to connecting individuals with the best service providers across various industries. Our mission is to simplify the process of finding reliable professionals for your needs, whether it's healthcare, technology, or other essential services.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Our Vision</h3>
+                    <p>To be the leading platform for connecting people with trusted service providers worldwide.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Our Values</h3>
+                    <ul class="list-disc pl-5">
+                        <li>Integrity</li>
+                        <li>Reliability</li>
+                        <li>Customer Satisfaction</li>
+                        <li>Innovation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Panel -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Register as a Provider</h2>
+            <form class="max-w-2xl mx-auto bg-gray-100 p-8 rounded-lg shadow-md">
+                <div class="mb-4">
+                    <label for="language" class="block text-sm font-medium mb-2">Select Language</label>
+                    <select id="language" class="w-full p-3 border rounded focus:ring-2 focus:ring-blue-500" aria-label="Select Language">
+                        <option>English</option>
+                        <option>Spanish</option>
+                        <option>French</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium mb-2">Name</label>
+                    <input type="text" id="name" class="w-full p-3 border rounded focus:ring-2 focus:ring-blue-500" placeholder="Your Name" aria-label="Name">
+                </div>
+                <div class="mb-4">
+                    <label for="skills" class="block text-sm font-medium mb-2">Working Skills</label>
+                    <div class="flex flex-wrap gap-4">
+                        <label class="flex items-center"><input type="checkbox" class="mr-2" aria-label="Communication"> Communication</label>
+                        <label class="flex items-center"><input type="checkbox" class="mr-2" aria-label="Driving"> Driving</label>
+                        <label class="flex items-center"><input type="checkbox" class="mr-2" aria-label="Translation"> Translation</label>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="photo" class="block text-sm font-medium mb-2">Upload Profile Photo</label>
+                    <input type="file" id="photo" class="w-full p-3 border rounded focus:ring-2 focus:ring-blue-500" aria-label="Upload Profile Photo">
+                </div>
+                <div class="mb-4">
+                    <label for="age" class="block text-sm font-medium mb-2">Age</label>
+                    <input type="number" id="age" class="w-full p-3 border rounded focus:ring-2 focus:ring-blue-500" placeholder="Your Age" aria-label="Age">
+                </div>
+                <div class="mb-4">
+                    <label for="location" class="block text-sm font-medium mb-2">Geo-location</label>
+                    <input type="text" id="location" class="w-full p-3 border rounded focus:ring-2 focus:ring-blue-500" placeholder="Your Location" aria-label="Geo-location">
+                </div>
+                <div class="mb-4">
+                    <label for="transportation" class="block text-sm font-medium mb-2">Transportation Availability</label>
+                    <select id="transportation" class="w-full p-3 border rounded focus:ring-2 focus:ring-blue-500" aria-label="Transportation Availability">
+                        <option>Own</option>
+                        <option>Arranged by Client</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="payment" class="block text-sm font-medium mb-2">Payment Preference</label>
+                    <select id="payment" class="w-full p-3 border rounded focus:ring-2 focus:ring-blue-500" aria-label="Payment Preference">
+                        <option>Online</option>
+                        <option>Cash</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="availability" class="block text-sm font-medium mb-2">Availability</label>
+                    <select id="availability" class="w-full p-3 border rounded focus:ring-2 focus:ring-blue-500" aria-label="Availability">
+                        <option>Full-time</option>
+                        <option>Part-time</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded shadow hover:bg-blue-700 focus:ring-2 focus:ring-blue-500">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Details Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Head Office</h3>
+                    <p>123 WorkFinder Street</p>
+                    <p>Cityville, CV 12345</p>
+                    <p>Email: contact@workfinder.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Support</h3>
+                    <p>Email: support@workfinder.com</p>
+                    <p>Phone: +1 (555) 987-6543</p>
+                    <p>Available: Mon-Fri, 9 AM - 6 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 WorkFinder. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="hover:underline">Terms</a>
+                <a href="#" class="hover:underline">Privacy</a>
+                <a href="#" class="hover:underline">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

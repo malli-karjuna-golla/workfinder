@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <style>
+        /* Removed Honk font styles */
+        .special-gothic-expanded-one-regular {
+            font-family: "Special Gothic Expanded One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-color: rgb(255, 0, 0);
+            }
+            25% {
+                background-color: rgb(0, 255, 0);
+            }
+            50% {
+                background-color: rgb(0, 0, 255);
+            }
+            75% {
+                background-color: rgb(255, 255, 0);
+            }
+            100% {
+                background-color: rgb(255, 0, 0);
+            }
+        }
+
+        .animate-gradient {
+            animation: gradient 5s infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 text-white sticky top-0 shadow-md">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <div class="text-2xl font-bold">WorkFinder</div>
+            <ul class="flex space-x-6">
+                <li><a href="#hero" class="hover:underline">Home</a></li>
+                <li><a href="#services" class="hover:underline">Services</a></li>
+                <li><a href="index.html" class="hover:underline">About US</a></li>
+                <li><a href="#contact" class="hover:underline">Contact</a></li>
+            </ul>
+            <button class="bg-white text-blue-600 px-4 py-2 rounded shadow hover:bg-gray-100">Login</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="py-20 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold mb-6">Our Services</h1>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 animate-gradient">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-bold text-center mb-10 text-white">Services</h1>
+            <p class="text-lg text-center text-white mb-6">
+                Explore a wide range of services tailored to meet your needs. From healthcare to technology, we connect you with trusted professionals to make your life easier.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- HealthCare Jobs -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h2 class="text-2xl font-bold mb-4">Healthcare Jobs</h2>
+                    <ul class="list-disc pl-5">
+                        <li><a href="#" class="hover:underline hover:text-blue-500">Veterinarians</a></li>
+                        <li><a href="#" class="hover:underline hover:text-blue-500">Registered Nurse</a></li>
+                        <li><a href="#" class="hover:underline hover:text-blue-500">Doctors</a></li>
+                        <li><a href="#" class="hover:underline hover:text-blue-500">Ambulance Drivers</a></li>
+                        <li><a href="#" class="hover:underline hover:text-blue-500">Lab Technicians</a></li>
+                        <li><a href="#" class="hover:underline hover:text-blue-500">Pharmacy</a></li>
+                    </ul>
+                </div>
+                <!-- Tech Jobs -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h2 class="text-2xl font-bold mb-4">Tech Jobs</h2>
+                    <ul class="list-disc pl-5">
+                        <li><a href="#" class="hover:underline hover:text-blue-500">Full Stack Developers</a></li>
+                        <li><a href="#" class="hover:underline hover:text-blue-500">Data Scientists</a></li>
+                        <li><a href="#" class="hover:underline hover:text-blue-500">Cloud Engineers</a></li>
+                        <li><a href="#" class="hover:underline hover:text-blue-500">AI/ML Engineers</a></li>
+                        <li><a href="#" class="hover:underline hover:text-blue-500">Cyber Security Analysts</a></li>
+                    </ul>
+                </div>
+                <!-- Other Professions -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h2 class="text-2xl font-bold mb-4">Other Professions</h2>
+                    <ul class="list-disc pl-5">
+                        <li><a href="#" class="hover:underline hover:text-blue-500">Lecturers</a></li>
+                        <li><a href="#" class="hover:underline hover:text-blue-500">Photographers</a></li>
+                        <li><a href="#" class="hover:underline hover:text-blue-500">Drivers</a></li>
+                        <li><a href="#" class="hover:underline hover:text-blue-500">Electricians</a></li>
+                        <li><a href="#" class="hover:underline hover:text-blue-500">Mechanics</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Details Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Head Office</h3>
+                    <p>123 WorkFinder Street</p>
+                    <p>Cityville, CV 12345</p>
+                    <p>Email: contact@workfinder.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Support</h3>
+                    <p>Email: support@workfinder.com</p>
+                    <p>Phone: +1 (555) 987-6543</p>
+                    <p>Available: Mon-Fri, 9 AM - 6 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 WorkFinder. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
